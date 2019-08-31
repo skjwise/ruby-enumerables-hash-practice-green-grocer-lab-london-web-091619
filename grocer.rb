@@ -17,7 +17,9 @@ def apply_coupons(cart, coupons)
         if cart["#{name} W/COUPON"]
           cart["#{name} W/COUPON"][:count] += 1
         else
-          cart["#{name} W/COUPON"] = 
+          cart["#{name} W/COUPON"] = {
+            
+          }
 end
 
 def apply_clearance(cart)

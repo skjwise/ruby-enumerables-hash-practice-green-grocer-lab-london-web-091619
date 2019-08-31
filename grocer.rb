@@ -23,8 +23,14 @@ def apply_coupons(cart, coupons)
       puts cart.has_key?(new_item)
       if cart.has_key?(new_item) == false
         cart[new_item] = {
-          :price => item[:cost], :clearance => cart[name_of_item]
+          :price => item[:cost], :clearance => cart[name_of_item][:clearance], :count => 1
         }
+      else
+        cart[new_item][:count] += 1
+      end
+    end
+  end
+  cart
 end
 
 def apply_clearance(cart)

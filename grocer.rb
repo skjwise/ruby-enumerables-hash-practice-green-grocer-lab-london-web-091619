@@ -10,7 +10,9 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  
+  coupons.each do |attribute, value|
+    name = coupon[item]
+    if cart[name] && 
 end
 
 def apply_clearance(cart)

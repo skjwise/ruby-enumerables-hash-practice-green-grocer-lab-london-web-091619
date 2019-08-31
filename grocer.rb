@@ -12,7 +12,7 @@ def consolidate_cart(cart:[])
   cosolidated_cart
 end
 
-def apply_coupons(cart:[], coupons:[])
+def apply_coupons(cart, coupons)
   
 end
 

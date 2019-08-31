@@ -5,7 +5,7 @@ def consolidate_cart(cart)
     hash.each do |food, info|
       if final.has_key?(food) == false
         final[food] = info
-        final[food][count] = 1
+        final[food][:count] = 1
         elsif final.has_key?(food)
         final[food][:count] += 1
       end
